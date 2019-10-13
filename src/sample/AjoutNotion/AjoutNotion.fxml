@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="357.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AjoutNotion.AjoutNotionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="42.0" prefHeight="27.0" prefWidth="228.0" text="Ajout d'une notion">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="123.0" layoutX="170.0" layoutY="85.0" startX="-100.0" />
+      <TextField fx:id="notionName" layoutX="118.0" layoutY="111.0" prefHeight="31.0" prefWidth="228.0" />
+      <Label layoutX="8.0" layoutY="118.0" text="Nom notion" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="166.0" prefHeight="37.0" prefWidth="130.0" text="Liste des question">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="viewIntitule" layoutX="18.0" layoutY="232.0" prefHeight="190.0" prefWidth="183.0" />
+      <ListView fx:id="viewType" layoutX="200.0" layoutY="232.0" prefHeight="190.0" prefWidth="130.0" />
+      <Label alignment="CENTER" layoutX="51.0" layoutY="213.0" prefHeight="17.0" prefWidth="65.0" text="Intitulé">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="214.0" layoutY="213.0" prefHeight="17.0" prefWidth="65.0" text="Type">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="67.0" layoutY="438.0" mnemonicParsing="false" onAction="#allerCreerQuestion" prefHeight="37.0" prefWidth="136.0" text="Ajouter une question" />
+      <Button layoutX="129.0" layoutY="547.0" mnemonicParsing="false" onAction="#valider" prefHeight="37.0" prefWidth="107.0" text="Valider" />
+      <Line endX="123.0" layoutX="167.0" layoutY="513.0" startX="-100.0" />
+      <Button layoutX="236.0" layoutY="439.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="37.0" prefWidth="52.0" text="MaJ" />
+      <Label fx:id="error1" layoutX="37.0" layoutY="522.0" prefHeight="17.0" prefWidth="290.0" textFill="#e10505" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+#principal{
+    -fx-background-color: white;
+}
+
+#enTete{
+    -fx-background-color: #D3D3D3;
+}
+ #blocGauche{
+     -fx-background-color: #D3D3D3;
+ }
+
+#blocDroit{
+    -fx-background-color: #D3D3D3;
+}

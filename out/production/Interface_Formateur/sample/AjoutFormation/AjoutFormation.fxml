@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AjoutFormation.AjoutFormationController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="32.0" prefHeight="27.0" prefWidth="228.0" text="Ajout d'une formation">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="123.0" layoutX="188.0" layoutY="75.0" startX="-100.0" />
+      <TextField fx:id="nomFormation" layoutX="132.0" layoutY="101.0" prefHeight="31.0" prefWidth="241.0" />
+      <Label layoutX="19.0" layoutY="108.0" text="Nom formation" />
+      <Label layoutX="19.0" layoutY="155.0" text="Date début" />
+      <DatePicker fx:id="dateOuv" layoutX="133.0" layoutY="148.0" prefHeight="31.0" prefWidth="241.0" />
+      <Label layoutX="20.0" layoutY="206.0" text="Date fin" />
+      <DatePicker fx:id="dateFermeture" layoutX="133.0" layoutY="199.0" prefHeight="31.0" prefWidth="241.0" />
+      <TextField fx:id="description" layoutX="133.0" layoutY="246.0" prefHeight="31.0" prefWidth="241.0" />
+      <Label layoutX="20.0" layoutY="253.0" text="Description" />
+      <ChoiceBox fx:id="listeNotions" layoutX="131.0" layoutY="338.0" prefHeight="31.0" prefWidth="241.0" />
+      <Button layoutX="253.0" layoutY="385.0" mnemonicParsing="false" onAction="#allerCreerNotion" prefHeight="43.0" prefWidth="119.0" text="Ajouter une notion" />
+      <Label layoutX="16.0" layoutY="345.0" text="Liste des notions" />
+      <Button layoutX="154.0" layoutY="483.0" mnemonicParsing="false" onAction="#valider" prefHeight="43.0" prefWidth="97.0" text="Valider" />
+      <Button layoutX="165.0" layoutY="386.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="43.0" prefWidth="52.0" text="MàJ" />
+      <Label fx:id="error" layoutX="21.0" layoutY="449.0" prefHeight="17.0" prefWidth="312.0" textFill="#e80b0b" />
+   </children>
+</AnchorPane>
